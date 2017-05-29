@@ -1,0 +1,22 @@
+{
+  "name": "header-parser",
+  "version": "1.0.0",
+  "description": "it is the second challenge in freecodecamp backend api projects",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dryyyyy/header-parser.git"
+  },
+  "author": "dryyyyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dryyyyy/header-parser/issues"
+  },
+  "homepage": "https://github.com/dryyyyy/header-parser#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
