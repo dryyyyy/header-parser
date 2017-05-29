@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "4.7.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dryyyyy/header-parser.git"
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/dryyyyy/header-parser#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "os": "^0.1.1"
   }
 }

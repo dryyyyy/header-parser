@@ -1,0 +1,8 @@
+{
+  "name": "the second freecodecamp api project.js",
+  "description": "shows user's ip, language, and OS",
+  "repository": "https://github.com/dryyyyy/header-parser.git",
+  "logo": "N/A",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

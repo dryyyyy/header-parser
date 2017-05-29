@@ -1,10 +1,24 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const os = require("os");
+const app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
+
+
+app.set('port', (process.env.PORT || 5000));
+
+app.get('/api/whoami', function (req, res) {
+    const ip = req.headers['x-forwarded-for'];
+    const language = req.acceptsLanguages()[0];
+    const operatingSystem = os.type() + '; ' + os.platform() + '; ' + os.arch();
+    const resultObj = {};
+    resultObj.ipaddress = ip;
+    resultObj.language = language;
+    resultObj.software = operatingSystem;
+    
+    console.log(operatingSystem);
+  res.send(resultObj)
 })
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!')
-})
+app.listen(app.get('port'), function() {
+  console.log('Header parser app is running on port', app.get('port'));
+});
